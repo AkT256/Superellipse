@@ -66,9 +66,6 @@ class SuperellipseApp(tk.Tk):
         self.add_slider(panel, "Поворот (°)", self.var_rot, -180, 180, "{:.0f}")
         self.add_slider(panel, "Точек по периметру", self.var_steps, 100, 2000, "{:.0f}")
 
-        # Кнопки увеличения/уменьшения n с клавиатуры
-        self.bind_all("<Key-plus>", lambda e: self.change_n(+0.1))
-        self.bind_all("<Key-minus>", lambda e: self.change_n(-0.1))
 
         # Первая отрисовка
         self.redraw()
@@ -102,3 +99,4 @@ class SuperellipseApp(tk.Tk):
 if __name__ == "__main__":
     app = SuperellipseApp()
     app.mainloop()
+
