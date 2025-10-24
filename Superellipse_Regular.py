@@ -2,9 +2,7 @@ import math
 import tkinter as tk
 from tkinter import ttk
 
-# ==============================================
 #  Построение обычного суперэллипса (один n)
-# ==============================================
 
 def superellipse_points(cx, cy, a, b, n, rot_deg, steps):
     """
@@ -99,6 +97,7 @@ class SuperellipseApp(tk.Tk):
 if __name__ == "__main__":
     app = SuperellipseApp()
     app.mainloop()
+
 
 
 
