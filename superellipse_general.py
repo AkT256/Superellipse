@@ -56,6 +56,7 @@ class SuperellipseApp(tk.Tk):
         self.var_ny = tk.DoubleVar(value=2)
         self.var_rot = tk.DoubleVar(value=0)
         self.var_steps = tk.IntVar(value=600)
+        self.var_linewidth = tk.DoubleVar(value=2)          # Толщина линии
 
         # Слайдеры
         self.add_slider(panel, "Полуось a", self.var_a, 20, 340, "{:.0f}")
@@ -93,4 +94,5 @@ class SuperellipseApp(tk.Tk):
 if __name__ == "__main__":
     app = SuperellipseApp()
     app.mainloop()
+
 
