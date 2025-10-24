@@ -2,9 +2,7 @@ import math
 import tkinter as tk
 from tkinter import ttk
 
-# =====================================================
 #  Обобщённый суперэллипс (независимые nx и ny)
-# =====================================================
 
 def superellipse_points(cx, cy, a, b, nx, ny, rot_deg, steps):
     """
@@ -94,5 +92,6 @@ class SuperellipseApp(tk.Tk):
 if __name__ == "__main__":
     app = SuperellipseApp()
     app.mainloop()
+
 
 
