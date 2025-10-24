@@ -22,7 +22,7 @@ def superellipse_points(cx, cy, a, b, n, rot_deg, steps):
         t = 2 * math.pi * i / steps   # угол от 0 до 2π
         ct, st = math.cos(t), math.sin(t)
 
-        # Формулы из Википедии: параметризация суперэллипса
+        # параметризация суперэллипса
         x = a * math.copysign(abs(ct) ** (2 / n), ct)
         y = b * math.copysign(abs(st) ** (2 / n), st)
 
@@ -97,6 +97,7 @@ class SuperellipseApp(tk.Tk):
 if __name__ == "__main__":
     app = SuperellipseApp()
     app.mainloop()
+
 
 
 
