@@ -30,7 +30,6 @@ def superellipse_points(cx, cy, a, b, n, rot_deg, steps):
         xr = x * cosp - y * sinp
         yr = x * sinp + y * cosp
 
-        # Добавляем координаты на экран (с учётом центра)
         pts.extend([cx + xr, cy + yr])
     return pts
 
@@ -97,6 +96,7 @@ class SuperellipseApp(tk.Tk):
 if __name__ == "__main__":
     app = SuperellipseApp()
     app.mainloop()
+
 
 
 
